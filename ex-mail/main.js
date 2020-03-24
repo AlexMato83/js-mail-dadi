@@ -13,20 +13,22 @@ var registredEmail = ["Gianfranco@email.it", "Cinzio@gmail.com", "Clarabella@tim
 var risultato;
 
 
-console.log(risultato);
+
 //confrontare mail inserita con quelle nel database
 for ( var i = 0; i < registredEmail.length; i++) {
  if (insertMail == registredEmail[i]) {
-   risultato = 1;
+   risultato = "la mail " + insertMail + " è corretta";
  } else {
-   risultato = 0;
+   risultato = "la mail " + insertMail + " è errata";
  }
 }
-if (risultato = 1) {
-  alert("la tua mail inserita è corretta");
-} else if (risultato = 0) {
-  alert("la tua mail è errata");
-}
+console.log(risultato);
+// if (risultato = 1) {
+//   alert("la tua mail inserita è corretta");
+// } else if (risultato = 0) {
+//   alert("la tua mail è errata");
+// }
+document.getElementById('asd').innerHTML = risultato;
 
 //stampare risultato
 
